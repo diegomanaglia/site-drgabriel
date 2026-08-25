@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" width="640" height="420" role="img" aria-label="Antes e depois: densidade da coroa">
+  <defs>
+    <linearGradient id="bgc1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#16110C"/>
+      <stop offset="55%" stop-color="#100C09"/>
+      <stop offset="100%" stop-color="#0A0705"/>
+    </linearGradient>
+    <linearGradient id="skinc1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#947051" stop-opacity=".72"/>
+      <stop offset="100%" stop-color="#6B4F37" stop-opacity=".34"/>
+    </linearGradient>
+    <linearGradient id="glowc1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#B4901F" stop-opacity=".14"/>
+      <stop offset="100%" stop-color="#B4901F" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="rhombc1" width="46" height="46" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="46" height="46" fill="none"/>
+      <rect x="0" y="0" width="23" height="23" fill="#BCA48A" opacity=".028"/>
+    </pattern>
+  </defs>
+  <clipPath id="leftc1"><rect x="0" y="0" width="320.0" height="420"/></clipPath>
+  <clipPath id="rightc1"><rect x="320.0" y="0" width="320.0" height="420"/></clipPath>
+  <rect width="640" height="420" fill="url(#bgc1)"/>
+  <rect width="640" height="420" fill="url(#rhombc1)"/>
+
+  <g clip-path="url(#leftc1)">
+    <ellipse cx="160" cy="260" rx="122" ry="143" fill="#2B2620"/>
+    <path d="M38 202 Q 160 84 282 202"
+          fill="#221E19"/>
+    <ellipse cx="160" cy="168" rx="83" ry="55" fill="#332D26" opacity=".9"/>
+  </g>
+
+  <g clip-path="url(#rightc1)">
+    <ellipse cx="480" cy="260" rx="122" ry="143" fill="url(#skinc1)"/>
+    <path d="M352 210 Q 480 55 608 210"
+          fill="#100C09"/>
+    <g stroke="#100C09" stroke-opacity=".5" stroke-width="1.1" fill="none">
+      <path d="M344 210 q 5 -67 13 -109"/>
+      <path d="M360 210 q 5 -67 13 -109"/>
+      <path d="M376 210 q 5 -67 13 -109"/>
+      <path d="M392 210 q 5 -67 13 -109"/>
+      <path d="M408 210 q 5 -67 13 -109"/>
+      <path d="M424 210 q 5 -67 13 -109"/>
+      <path d="M440 210 q 5 -67 13 -109"/>
+      <path d="M456 210 q 5 -67 13 -109"/>
+      <path d="M472 210 q 5 -67 13 -109"/>
+      <path d="M488 210 q 5 -67 13 -109"/>
+      <path d="M504 210 q 5 -67 13 -109"/>
+      <path d="M520 210 q 5 -67 13 -109"/>
+      <path d="M536 210 q 5 -67 13 -109"/>
+      <path d="M552 210 q 5 -67 13 -109"/>
+      <path d="M568 210 q 5 -67 13 -109"/>
+      <path d="M584 210 q 5 -67 13 -109"/>
+      <path d="M600 210 q 5 -67 13 -109"/>
+      <path d="M616 210 q 5 -67 13 -109"/>
+    </g>
+  </g>
+
+  <line x1="320.0" y1="0" x2="320.0" y2="420" stroke="#B4901F" stroke-opacity=".42" stroke-width="1.4" stroke-dasharray="6 6"/>
+  <text x="160.0" y="398" fill="#8B7358" font-family="Montserrat, Segoe UI, sans-serif" font-size="12" font-weight="600" letter-spacing="0.28em" text-anchor="middle">ANTES</text>
+  <text x="480.0" y="398" fill="#B4901F" font-family="Montserrat, Segoe UI, sans-serif" font-size="12" font-weight="600" letter-spacing="0.28em" text-anchor="middle">DEPOIS</text>
+</svg>

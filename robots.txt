@@ -7,6 +7,7 @@ Allow: /
 # Versoes de avaliacao e indice interno
 Disallow: /v2/
 Disallow: /v3/
+Disallow: /v4/
 Disallow: /versoes.html
 
 Sitemap: https://drgabrielbelnuovo.com.br/sitemap.xml

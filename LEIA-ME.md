@@ -20,6 +20,10 @@ v2/                 versao 2 (rascunho, noindex) — editorial, base clara
 v3/                 versao 3 (rascunho, noindex) — minimalista, base bem escura
   index.html        + barra de identificacao no topo
   css/ js/ assets/  copias independentes
+
+v4/                 versao 4 (rascunho, noindex) — a v1 com a paleta descida
+  index.html        + barra de identificacao no topo
+  css/ js/ assets/  copias independentes
 ```
 
 ## Versões
@@ -32,6 +36,7 @@ subpastas em vez de branches separadas:
 | 1 | `/` | oficial, indexável pelo Google | noite e autoridade — base espresso, mecanismo técnico |
 | 2 | `/v2/` | rascunho, `noindex` | papel e discrição — base clara, medo social |
 | 3 | `/v3/` | rascunho, `noindex` | dossiê e precisão — base quase preta, dados |
+| 4 | `/v4/` | rascunho, `noindex` | a v1 aprofundada — mesma estrutura, arousal reduzido |
 | índice | `/versoes.html` | lista as versões, `noindex` | — |
 
 Cada versão tem a própria cópia de `css`, `js` e `assets`. Alterar uma não
@@ -41,10 +46,10 @@ em qualquer subdiretório sem edição.
 **Criar uma versão nova:**
 
 ```bash
-cp -r v3 v4
+cp -r v4 v5
 ```
 
-Depois ajuste o texto da barra em `v4/index.html` e adicione o cartão
+Depois ajuste o texto da barra em `v5/index.html` e adicione o cartão
 correspondente em `versoes.html`.
 
 **Promover uma versão a oficial:** mova os arquivos dela para a raiz, remova o
@@ -81,6 +86,26 @@ espresso: `#0A0806` (noir, fundo principal) e `#131009` (onyx, superfícies). Lu
 relativa 0.0025 contra 0.0083 do espresso — quase o dobro de profundidade percebida.
 Nessa base, dourado rende 8.27:1 e taupe 9.37:1; bronze cai para 4.47:1 e por isso ficou
 restrito a texto grande (rótulos, não parágrafos).
+
+A versão 4 desce a paleta da v1 mantendo o matiz. Todos os tons novos ficam entre 24° e
+34°, a mesma faixa de espresso, bronze, taupe e marfim, então a harmonia vem por
+construção e não por escolha avulsa:
+
+| Papel | Cor | Hex | Contraste |
+|---|---|---|---|
+| Fundo principal | Abismo | `#100C09` | — (2,1x mais escuro que a v1) |
+| Faixa alternada | Profundo | `#16110C` | — |
+| Cartões | Superfície | `#1C1610` | 1.09:1 contra o fundo |
+| Corpo de texto | Linho | `#EDE2D4` | 15.23:1 |
+| Texto secundário | Areia | `#BCA48A` | 8.17:1 |
+| Acento em repouso | Âmbar | `#B4901F` | 6.44:1 |
+| Acento em foco e hover | Dourado antigo | `#C9A227` | 8.05:1 |
+| Fundo de destaque | Vinho | `#4A1824` | 11.35:1 com linho |
+
+Em luminância tão baixa, salto de tom quase não produz contraste: o cartão fica a
+1.09:1 do fundo. Quem delimita é o filete, a 1.71:1. Bronze (4.35:1) e bronze
+envelhecido (2.59:1) reprovam para texto pequeno nessa base e ficaram restritos a
+bordas e decoração; bordô saiu do primeiro plano e passou a servir só como fundo.
 
 ## Substituição das imagens
 

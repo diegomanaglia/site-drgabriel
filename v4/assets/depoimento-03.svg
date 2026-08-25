@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 620" width="480" height="620" role="img" aria-label="Paciente em depoimento">
+  <defs>
+    <linearGradient id="bgd3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#16110C"/>
+      <stop offset="55%" stop-color="#100C09"/>
+      <stop offset="100%" stop-color="#0A0705"/>
+    </linearGradient>
+    <linearGradient id="skind3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#947051" stop-opacity=".72"/>
+      <stop offset="100%" stop-color="#6B4F37" stop-opacity=".34"/>
+    </linearGradient>
+    <linearGradient id="glowd3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#B4901F" stop-opacity=".14"/>
+      <stop offset="100%" stop-color="#B4901F" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="rhombd3" width="46" height="46" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="46" height="46" fill="none"/>
+      <rect x="0" y="0" width="23" height="23" fill="#BCA48A" opacity=".028"/>
+    </pattern>
+  </defs>
+  <rect width="480" height="620" fill="url(#bgd3)"/>
+  <rect width="480" height="620" fill="url(#rhombd3)"/>
+  <ellipse cx="240.0" cy="211" rx="221" ry="260" fill="url(#glowd3)"/>
+  <g opacity=".95">
+    <path d="M77 620 C 86 384 154 291 240 285
+             C 326 291 394 384 403 620 Z"
+          fill="#120E0A"/>
+    <path d="M77 620 C 86 384 154 291 240 285
+             C 326 291 394 384 403 620 Z"
+          fill="none" stroke="#947051" stroke-opacity=".4" stroke-width="1.4"/>
+    <path d="M240 285 L216 446 M240 285 L264 446"
+          stroke="#947051" stroke-opacity=".28" stroke-width="1.1" fill="none"/>
+    <rect x="204" y="273" width="72" height="28" rx="12" fill="#6B4F37" opacity=".45"/>
+    <ellipse cx="240.0" cy="174" rx="74" ry="91" fill="url(#skind3)"/>
+    <path d="M166 136 Q 240 62 314 136"
+          fill="#100C09" opacity=".92"/>
+    <circle cx="214" cy="248" r="13" fill="none" stroke="#B4901F" stroke-opacity=".55" stroke-width="2"/>
+    <circle cx="266" cy="248" r="13" fill="none" stroke="#B4901F" stroke-opacity=".55" stroke-width="2"/>
+    <path d="M214 248 H 266" stroke="#B4901F" stroke-opacity=".38" stroke-width="1.4"/>
+  </g>
+  <text x="240.0" y="594" fill="#8B7358" font-family="Montserrat, Segoe UI, sans-serif" font-size="11" font-weight="500" letter-spacing="0.3em" text-anchor="middle">IMAGEM ILUSTRATIVA</text>
+</svg>
