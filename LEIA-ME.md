@@ -5,11 +5,47 @@ Site estático em HTML + CSS + JS, sem dependências de build.
 ## Estrutura
 
 ```
-index.html          página única
+index.html          versao 1 (oficial, indexavel)
 css/style.css       design system + layout responsivo
 js/main.js          header, menu mobile, reveal, FAQ, nav ativa
 assets/             placeholders SVG (substituir por fotos reais)
+
+versoes.html        indice interno para comparar as versoes
+robots.txt          libera a raiz, bloqueia /v2/ e versoes.html
+
+v2/                 versao 2 (rascunho, noindex)
+  index.html        + barra de identificacao no topo
+  css/ js/ assets/  copias independentes
 ```
+
+## Versões
+
+O GitHub Pages serve uma fonte por repositório, então as versões convivem em
+subpastas em vez de branches separadas:
+
+| Versão | Endereço | Situação |
+|---|---|---|
+| 1 | `/` | oficial, indexável pelo Google |
+| 2 | `/v2/` | rascunho, `noindex` |
+| índice | `/versoes.html` | lista as versões, `noindex` |
+
+Cada versão tem a própria cópia de `css`, `js` e `assets`. Alterar uma não
+afeta as outras. Os caminhos no HTML são relativos, então a pasta funciona
+em qualquer subdiretório sem edição.
+
+**Criar uma versão nova:**
+
+```bash
+cp -r v2 v3
+```
+
+Depois ajuste o texto da barra em `v3/index.html` e adicione o cartão
+correspondente em `versoes.html`.
+
+**Promover uma versão a oficial:** mova os arquivos dela para a raiz, remova o
+bloco `.version-bar` (marcado por comentário no `<head>` e no `<body>`),
+remova a meta `robots` de `noindex` e tire o prefixo `[v2]` do `<title>`.
+Atualize também o `robots.txt`.
 
 ## Como rodar
 

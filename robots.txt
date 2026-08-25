@@ -1,0 +1,11 @@
+# Dr. Gabriel Belnuovo - transplante capilar
+# Somente a versao oficial na raiz deve ser indexada.
+
+User-agent: *
+Allow: /
+
+# Versoes de avaliacao e indice interno
+Disallow: /v2/
+Disallow: /versoes.html
+
+Sitemap: https://drgabrielbelnuovo.com.br/sitemap.xml
