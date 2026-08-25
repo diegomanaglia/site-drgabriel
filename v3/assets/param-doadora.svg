@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" width="720" height="420" role="img" aria-label="Area doadora">
+  <defs>
+    <linearGradient id="bgp3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#131009"/>
+      <stop offset="100%" stop-color="#0A0806"/>
+    </linearGradient>
+    <linearGradient id="figp3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3A342C"/>
+      <stop offset="100%" stop-color="#1D1912"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="420" fill="url(#bgp3)"/>
+  <g opacity=".9"><line x1="36" y1="0" x2="36" y2="420" stroke="#C7AD95" stroke-opacity=".045" stroke-width="1"/>
+    <line x1="72" y1="0" x2="72" y2="420" stroke="#C7AD95" stroke-opacity=".045" stroke-width="1"/>
+    <line x1="108" y1="0" x2="108" y2="420" stroke="#C7AD95" stroke-opacity=".045" stroke-width="1"/>
+    <line x1="144" y1="0" x2="144" y2="420" stroke="#C7AD95" stroke-opacity=".045" stroke-width="1"/>
+    <line x1="180" y1="0" x2="180" y2="420" stroke="#C7AD95" stroke-opacity=".045" stroke-width="1"/>
+    <line x1="216" y1="0" x2="216" y2="420" stroke="#C7AD95" stroke-opacity=".045" stroke-width="1"/>
+    <line x1="252" y1="0" x2="252" y2="420" stroke="#C7AD95" stroke-opacity=".045" stroke-width="1"/>
+    <line x1="288" y1="0" x2="288" y2="420" stroke="#C7AD95" stroke-opacity=".045" stroke-width="1"/>
+    <line x1="324" y1="0" x2="324" y2="420" stroke="#C7AD95" stroke-opacity=".045" stroke-width="1"/>
+    <line x1="360" y1="0" x2="360" y2="420" stroke="#C7AD95" stroke-opacity=".045" stroke-width="1"/>
+    <line x1="396" y1="0" x2="396" y2="420" stroke="#C7AD95" stroke-opacity=".045" stroke-width="1"/>
+    <line x1="432" y1="0" x2="432" y2="420" stroke="#C7AD95" stroke-opacity=".045" stroke-width="1"/>
+    <line x1="468" y1="0" x2="468" y2="420" stroke="#C7AD95" stroke-opacity=".045" stroke-width="1"/>
+    <line x1="504" y1="0" x2="504" y2="420" stroke="#C7AD95" stroke-opacity=".045" stroke-width="1"/>
+    <line x1="540" y1="0" x2="540" y2="420" stroke="#C7AD95" stroke-opacity=".045" stroke-width="1"/>
+    <line x1="576" y1="0" x2="576" y2="420" stroke="#C7AD95" stroke-opacity=".045" stroke-width="1"/>
+    <line x1="612" y1="0" x2="612" y2="420" stroke="#C7AD95" stroke-opacity=".045" stroke-width="1"/>
+    <line x1="648" y1="0" x2="648" y2="420" stroke="#C7AD95" stroke-opacity=".045" stroke-width="1"/>
+    <line x1="684" y1="0" x2="684" y2="420" stroke="#C7AD95" stroke-opacity=".045" stroke-width="1"/>
+    <line x1="0" y1="36" x2="720" y2="36" stroke="#C7AD95" stroke-opacity=".045" stroke-width="1"/>
+    <line x1="0" y1="72" x2="720" y2="72" stroke="#C7AD95" stroke-opacity=".045" stroke-width="1"/>
+    <line x1="0" y1="108" x2="720" y2="108" stroke="#C7AD95" stroke-opacity=".045" stroke-width="1"/>
+    <line x1="0" y1="144" x2="720" y2="144" stroke="#C7AD95" stroke-opacity=".045" stroke-width="1"/>
+    <line x1="0" y1="180" x2="720" y2="180" stroke="#C7AD95" stroke-opacity=".045" stroke-width="1"/>
+    <line x1="0" y1="216" x2="720" y2="216" stroke="#C7AD95" stroke-opacity=".045" stroke-width="1"/>
+    <line x1="0" y1="252" x2="720" y2="252" stroke="#C7AD95" stroke-opacity=".045" stroke-width="1"/>
+    <line x1="0" y1="288" x2="720" y2="288" stroke="#C7AD95" stroke-opacity=".045" stroke-width="1"/>
+    <line x1="0" y1="324" x2="720" y2="324" stroke="#C7AD95" stroke-opacity=".045" stroke-width="1"/>
+    <line x1="0" y1="360" x2="720" y2="360" stroke="#C7AD95" stroke-opacity=".045" stroke-width="1"/>
+    <line x1="0" y1="396" x2="720" y2="396" stroke="#C7AD95" stroke-opacity=".045" stroke-width="1"/></g>
+  <clipPath id="clp3"><rect width="360.0" height="420"/></clipPath>
+  <clipPath id="crp3"><rect x="360.0" width="360.0" height="420"/></clipPath>
+
+  <g clip-path="url(#clp3)">
+    <ellipse cx="180" cy="260" rx="115" ry="134" fill="#2A251E"/>
+  </g>
+  <g clip-path="url(#crp3)">
+    <ellipse cx="540" cy="260" rx="115" ry="134" fill="#3E372D"/>
+  </g>
+
+  <line x1="360.0" y1="0" x2="360.0" y2="420" stroke="#C7AD95" stroke-opacity=".3" stroke-width="1" stroke-dasharray="2 5"/>
+  <path d="M10 26 V10 H26" fill="none" stroke="#C7AD95" stroke-opacity=".55" stroke-width="1"/>
+    <path d="M710 26 V10 H694" fill="none" stroke="#C7AD95" stroke-opacity=".55" stroke-width="1"/>
+    <path d="M10 394 V410 H26" fill="none" stroke="#C7AD95" stroke-opacity=".55" stroke-width="1"/>
+    <path d="M710 394 V410 H694" fill="none" stroke="#C7AD95" stroke-opacity=".55" stroke-width="1"/>
+  <text x="20" y="28" fill="#C9A227" font-family="IBM Plex Mono, monospace" font-size="10" letter-spacing="0.08em" text-anchor="start">AREA DOADORA</text>
+  <text x="20" y="402" fill="#C7AD95" font-family="IBM Plex Mono, monospace" font-size="9" letter-spacing="0.08em" text-anchor="start">EXTRACAO</text>
+  <text x="700" y="402" fill="#F3E9DD" font-family="IBM Plex Mono, monospace" font-size="9" letter-spacing="0.08em" text-anchor="end">CICATRIZADO</text>
+</svg>

@@ -11,9 +11,13 @@ js/main.js          header, menu mobile, reveal, FAQ, nav ativa
 assets/             placeholders SVG (substituir por fotos reais)
 
 versoes.html        indice interno para comparar as versoes
-robots.txt          libera a raiz, bloqueia /v2/ e versoes.html
+robots.txt          libera a raiz, bloqueia /v2/, /v3/ e versoes.html
 
-v2/                 versao 2 (rascunho, noindex)
+v2/                 versao 2 (rascunho, noindex) — editorial, base clara
+  index.html        + barra de identificacao no topo
+  css/ js/ assets/  copias independentes
+
+v3/                 versao 3 (rascunho, noindex) — minimalista, base bem escura
   index.html        + barra de identificacao no topo
   css/ js/ assets/  copias independentes
 ```
@@ -23,11 +27,12 @@ v2/                 versao 2 (rascunho, noindex)
 O GitHub Pages serve uma fonte por repositório, então as versões convivem em
 subpastas em vez de branches separadas:
 
-| Versão | Endereço | Situação |
-|---|---|---|
-| 1 | `/` | oficial, indexável pelo Google |
-| 2 | `/v2/` | rascunho, `noindex` |
-| índice | `/versoes.html` | lista as versões, `noindex` |
+| Versão | Endereço | Situação | Direção |
+|---|---|---|---|
+| 1 | `/` | oficial, indexável pelo Google | noite e autoridade — base espresso, mecanismo técnico |
+| 2 | `/v2/` | rascunho, `noindex` | papel e discrição — base clara, medo social |
+| 3 | `/v3/` | rascunho, `noindex` | dossiê e precisão — base quase preta, dados |
+| índice | `/versoes.html` | lista as versões, `noindex` | — |
 
 Cada versão tem a própria cópia de `css`, `js` e `assets`. Alterar uma não
 afeta as outras. Os caminhos no HTML são relativos, então a pasta funciona
@@ -36,10 +41,10 @@ em qualquer subdiretório sem edição.
 **Criar uma versão nova:**
 
 ```bash
-cp -r v2 v3
+cp -r v3 v4
 ```
 
-Depois ajuste o texto da barra em `v3/index.html` e adicione o cartão
+Depois ajuste o texto da barra em `v4/index.html` e adicione o cartão
 correspondente em `versoes.html`.
 
 **Promover uma versão a oficial:** mova os arquivos dela para a raiz, remova o
@@ -70,6 +75,12 @@ python -m http.server 8765
 
 Contrastes verificados: marfim sobre espresso 15.0:1, CTA dourado com texto espresso 7.4:1,
 taupe sobre espresso 8.4:1, bordô sobre marfim 10.4:1. Todos acima de AA.
+
+A versão 3 usa dois tons fora da paleta original, para um fundo mais escuro que o
+espresso: `#0A0806` (noir, fundo principal) e `#131009` (onyx, superfícies). Luminância
+relativa 0.0025 contra 0.0083 do espresso — quase o dobro de profundidade percebida.
+Nessa base, dourado rende 8.27:1 e taupe 9.37:1; bronze cai para 4.47:1 e por isso ficou
+restrito a texto grande (rótulos, não parágrafos).
 
 ## Substituição das imagens
 
