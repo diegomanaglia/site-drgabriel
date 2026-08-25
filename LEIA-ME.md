@@ -5,13 +5,14 @@ Site estático em HTML + CSS + JS, sem dependências de build.
 ## Estrutura
 
 ```
-index.html          versao 1 (oficial, indexavel)
-css/style.css       design system + layout responsivo
-js/main.js          header, menu mobile, reveal, FAQ, nav ativa
-assets/             placeholders SVG (substituir por fotos reais)
+index.html          indice de versoes (hub), noindex — abre em "/"
+robots.txt          libera /v1/, bloqueia a raiz exata, /v2/, /v3/, /v4/
 
-versoes.html        indice interno para comparar as versoes
-robots.txt          libera a raiz, bloqueia /v2/, /v3/ e versoes.html
+v1/                 versao 1 (oficial, indexavel) — noite e autoridade
+  index.html
+  css/style.css     design system + layout responsivo
+  js/main.js        header, menu mobile, reveal, FAQ, nav ativa
+  assets/           placeholders SVG (substituir por fotos reais)
 
 v2/                 versao 2 (rascunho, noindex) — editorial, base clara
   index.html        + barra de identificacao no topo
@@ -26,6 +27,11 @@ v4/                 versao 4 (rascunho, noindex) — a v1 com a paleta descida
   css/ js/ assets/  copias independentes
 ```
 
+Todas as versões vivem em subpastas com o mesmo padrão (`vN/index.html` +
+`css/` + `js/` + `assets/` próprios). A raiz não hospeda mais nenhum site:
+é só o hub de comparação, e por isso é `noindex` — o mesmo tratamento que
+`versoes.html` tinha antes de virar o `index.html` da raiz.
+
 ## Versões
 
 O GitHub Pages serve uma fonte por repositório, então as versões convivem em
@@ -33,15 +39,17 @@ subpastas em vez de branches separadas:
 
 | Versão | Endereço | Situação | Direção |
 |---|---|---|---|
-| 1 | `/` | oficial, indexável pelo Google | noite e autoridade — base espresso, mecanismo técnico |
+| 1 | `/v1/` | oficial, indexável pelo Google | noite e autoridade — base espresso, mecanismo técnico |
 | 2 | `/v2/` | rascunho, `noindex` | papel e discrição — base clara, medo social |
 | 3 | `/v3/` | rascunho, `noindex` | dossiê e precisão — base quase preta, dados |
 | 4 | `/v4/` | rascunho, `noindex` | a v1 aprofundada — mesma estrutura, arousal reduzido |
-| índice | `/versoes.html` | lista as versões, `noindex` | — |
+| hub | `/` | lista as versões, `noindex` | — |
 
 Cada versão tem a própria cópia de `css`, `js` e `assets`. Alterar uma não
-afeta as outras. Os caminhos no HTML são relativos, então a pasta funciona
-em qualquer subdiretório sem edição.
+afeta as outras. Os caminhos no HTML são relativos ao próprio `vN/`, então
+a pasta funciona em qualquer subdiretório sem edição — só o link "Comparar
+versões" na barra de cada rascunho (`../index.html`) assume que a versão
+está um nível abaixo da raiz.
 
 **Criar uma versão nova:**
 
@@ -50,20 +58,24 @@ cp -r v4 v5
 ```
 
 Depois ajuste o texto da barra em `v5/index.html` e adicione o cartão
-correspondente em `versoes.html`.
+correspondente em `index.html` (o hub, na raiz).
 
-**Promover uma versão a oficial:** mova os arquivos dela para a raiz, remova o
-bloco `.version-bar` (marcado por comentário no `<head>` e no `<body>`),
-remova a meta `robots` de `noindex` e tire o prefixo `[v2]` do `<title>`.
-Atualize também o `robots.txt`.
+**Promover uma versão a oficial:** troque qual pasta o `robots.txt` libera
+(`Allow: /vN/` no lugar de `/v1/`), remova o bloco `.version-bar` da versão
+promovida (marcado por comentário no `<head>` e no `<body>`), remova a meta
+`robots` de `noindex` e tire o prefixo `[vN]` do `<title>`. A antiga oficial
+ganha de volta a barra e o `noindex` que toda versão de rascunho tem.
+Atualize também o cartão dela no hub.
 
 ## Como rodar
 
-Abra `index.html` no navegador, ou sirva a pasta:
+Sirva a raiz do repositório — o hub linka para cada versão a partir dali:
 
 ```bash
 python -m http.server 8765
 ```
+
+Para abrir uma versão específica direto, acesse `v1/index.html` (ou v2, v3, v4).
 
 ## Paleta aplicada (cores.txt)
 
@@ -109,8 +121,8 @@ bordas e decoração; bordô saiu do primeiro plano e passou a servir só como f
 
 ## Substituição das imagens
 
-Os arquivos em `assets/` são placeholders vetoriais. Troque pelos arquivos reais mantendo
-os mesmos nomes (ou atualize os `src` no `index.html`). Proporções esperadas:
+Os arquivos em `v1/assets/` são placeholders vetoriais. Troque pelos arquivos reais
+mantendo os mesmos nomes (ou atualize os `src` em `v1/index.html`). Proporções esperadas:
 
 | Arquivo | Proporção | Uso |
 |---|---|---|
@@ -127,7 +139,7 @@ abaixo da primeira dobra.
 ## Vídeos
 
 Os botões de play são placeholders — hoje apenas se desabilitam ao clique.
-Para ativar, troque o handler em `js/main.js` (bloco "Placeholder de video")
+Para ativar, troque o handler em `v1/js/main.js` (bloco "Placeholder de video")
 por um embed de YouTube/Vimeo ou por um `<video>` local.
 
 ## Antes de publicar

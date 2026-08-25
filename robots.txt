@@ -1,13 +1,15 @@
 # Dr. Gabriel Belnuovo - transplante capilar
-# Somente a versao oficial na raiz deve ser indexada.
+# A versao oficial agora vive em /v1/. A raiz e um indice interno de
+# comparacao entre versoes e nao deve ser indexada; "$" restringe o
+# bloqueio a raiz exata, sem afetar /v1/, /v2/ etc.
 
 User-agent: *
-Allow: /
+Allow: /v1/
+Disallow: /$
 
-# Versoes de avaliacao e indice interno
+# Versoes de avaliacao
 Disallow: /v2/
 Disallow: /v3/
 Disallow: /v4/
-Disallow: /versoes.html
 
 Sitemap: https://drgabrielbelnuovo.com.br/sitemap.xml
