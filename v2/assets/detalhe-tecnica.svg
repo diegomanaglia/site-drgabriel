@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="640" height="640" role="img" aria-label="Detalhe da implantacao fio a fio">
+  <defs>
+    <linearGradient id="bgdt" x1="0" y1="0" x2=".6" y2="1">
+      <stop offset="0%" stop-color="#E8DACA"/>
+      <stop offset="52%" stop-color="#DCCBB6"/>
+      <stop offset="100%" stop-color="#CDB79E"/>
+    </linearGradient>
+    <linearGradient id="skdt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#947051" stop-opacity=".62"/>
+      <stop offset="100%" stop-color="#6B4F37" stop-opacity=".3"/>
+    </linearGradient>
+    <linearGradient id="vgdt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1C1512" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#1C1512" stop-opacity=".28"/>
+    </linearGradient>
+    <pattern id="grdt" width="6" height="6" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r=".7" fill="#6B4F37" opacity=".07"/>
+      <circle cx="4.5" cy="4.5" r=".7" fill="#6B4F37" opacity=".05"/>
+    </pattern>
+  </defs>
+  <rect width="640" height="640" fill="url(#bgdt)"/>
+  <rect width="640" height="640" fill="url(#grdt)"/>
+  <g stroke="#1C1512" stroke-opacity=".5" stroke-width="1.3" fill="none" stroke-linecap="round">
+    <path d="M30 40 q 3 -8 8 -14"/>
+    <path d="M87 40 q 3 -8 8 -14"/>
+    <path d="M144 40 q 3 -8 8 -14"/>
+    <path d="M201 40 q 3 -8 8 -14"/>
+    <path d="M258 40 q 3 -8 8 -14"/>
+    <path d="M315 40 q 3 -8 8 -14"/>
+    <path d="M372 40 q 3 -8 8 -14"/>
+    <path d="M429 40 q 3 -8 8 -14"/>
+    <path d="M486 40 q 3 -8 8 -14"/>
+    <path d="M543 40 q 3 -8 8 -14"/>
+    <path d="M600 40 q 3 -8 8 -14"/>
+    <path d="M59 120 q 3 -8 8 -14"/>
+    <path d="M116 120 q 3 -8 8 -14"/>
+    <path d="M173 120 q 3 -8 8 -14"/>
+    <path d="M230 120 q 3 -8 8 -14"/>
+    <path d="M287 120 q 3 -8 8 -14"/>
+    <path d="M344 120 q 3 -8 8 -14"/>
+    <path d="M401 120 q 3 -8 8 -14"/>
+    <path d="M458 120 q 3 -8 8 -14"/>
+    <path d="M515 120 q 3 -8 8 -14"/>
+    <path d="M572 120 q 3 -8 8 -14"/>
+    <path d="M30 200 q 3 -8 8 -14"/>
+    <path d="M87 200 q 3 -8 8 -14"/>
+    <path d="M144 200 q 3 -8 8 -14"/>
+    <path d="M201 200 q 3 -8 8 -14"/>
+    <path d="M258 200 q 3 -8 8 -14"/>
+    <path d="M315 200 q 3 -8 8 -14"/>
+    <path d="M372 200 q 3 -8 8 -14"/>
+    <path d="M429 200 q 3 -8 8 -14"/>
+    <path d="M486 200 q 3 -8 8 -14"/>
+    <path d="M543 200 q 3 -8 8 -14"/>
+    <path d="M600 200 q 3 -8 8 -14"/>
+    <path d="M59 280 q 3 -8 8 -14"/>
+    <path d="M116 280 q 3 -8 8 -14"/>
+    <path d="M173 280 q 3 -8 8 -14"/>
+    <path d="M230 280 q 3 -8 8 -14"/>
+    <path d="M287 280 q 3 -8 8 -14"/>
+    <path d="M344 280 q 3 -8 8 -14"/>
+    <path d="M401 280 q 3 -8 8 -14"/>
+    <path d="M458 280 q 3 -8 8 -14"/>
+    <path d="M515 280 q 3 -8 8 -14"/>
+    <path d="M572 280 q 3 -8 8 -14"/>
+    <path d="M30 360 q 3 -8 8 -14"/>
+    <path d="M87 360 q 3 -8 8 -14"/>
+    <path d="M144 360 q 3 -8 8 -14"/>
+    <path d="M201 360 q 3 -8 8 -14"/>
+    <path d="M258 360 q 3 -8 8 -14"/>
+    <path d="M315 360 q 3 -8 8 -14"/>
+    <path d="M372 360 q 3 -8 8 -14"/>
+    <path d="M429 360 q 3 -8 8 -14"/>
+    <path d="M486 360 q 3 -8 8 -14"/>
+    <path d="M543 360 q 3 -8 8 -14"/>
+    <path d="M600 360 q 3 -8 8 -14"/>
+    <path d="M59 440 q 3 -8 8 -14"/>
+    <path d="M116 440 q 3 -8 8 -14"/>
+    <path d="M173 440 q 3 -8 8 -14"/>
+    <path d="M230 440 q 3 -8 8 -14"/>
+    <path d="M287 440 q 3 -8 8 -14"/>
+    <path d="M344 440 q 3 -8 8 -14"/>
+    <path d="M401 440 q 3 -8 8 -14"/>
+    <path d="M458 440 q 3 -8 8 -14"/>
+    <path d="M515 440 q 3 -8 8 -14"/>
+    <path d="M572 440 q 3 -8 8 -14"/>
+    <path d="M30 520 q 3 -8 8 -14"/>
+    <path d="M87 520 q 3 -8 8 -14"/>
+    <path d="M144 520 q 3 -8 8 -14"/>
+    <path d="M201 520 q 3 -8 8 -14"/>
+    <path d="M258 520 q 3 -8 8 -14"/>
+    <path d="M315 520 q 3 -8 8 -14"/>
+    <path d="M372 520 q 3 -8 8 -14"/>
+    <path d="M429 520 q 3 -8 8 -14"/>
+    <path d="M486 520 q 3 -8 8 -14"/>
+    <path d="M543 520 q 3 -8 8 -14"/>
+    <path d="M600 520 q 3 -8 8 -14"/>
+    <path d="M59 600 q 3 -8 8 -14"/>
+    <path d="M116 600 q 3 -8 8 -14"/>
+    <path d="M173 600 q 3 -8 8 -14"/>
+    <path d="M230 600 q 3 -8 8 -14"/>
+    <path d="M287 600 q 3 -8 8 -14"/>
+    <path d="M344 600 q 3 -8 8 -14"/>
+    <path d="M401 600 q 3 -8 8 -14"/>
+    <path d="M458 600 q 3 -8 8 -14"/>
+    <path d="M515 600 q 3 -8 8 -14"/>
+    <path d="M572 600 q 3 -8 8 -14"/>
+  </g>
+  <g fill="#5C1F2E" opacity=".5">
+    <circle cx="40" cy="320" r="2.4"/>
+    <circle cx="180" cy="320" r="2.4"/>
+    <circle cx="320" cy="320" r="2.4"/>
+    <circle cx="460" cy="320" r="2.4"/>
+    <circle cx="600" cy="320" r="2.4"/>
+  </g>
+  <rect x="14" y="14" width="612" height="612" fill="none" stroke="#947051" stroke-opacity=".3" stroke-width="1"/>
+  <text x="320.0" y="618" fill="#6B4F37" font-family="Inter, Segoe UI, sans-serif" font-size="10" font-weight="500" letter-spacing="0.28em" text-anchor="middle">DETALHE DA IMPLANTACAO FIO A F</text>
+</svg>

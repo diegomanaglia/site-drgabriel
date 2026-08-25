@@ -1,124 +1,110 @@
 /* ==========================================================================
-   Dr. Gabriel Belnuovo - comportamento da pagina
-   Sem dependencias externas.
+   Dr. Gabriel Belnuovo - VERSAO 2
+   Comportamento da pagina. Sem dependencias externas.
    ========================================================================== */
 (function () {
   'use strict';
 
-  /* ------------------------------------------------ Header ao rolar */
-  var header = document.getElementById('header');
-  if (header) {
-    var applyStuck = function () {
-      header.classList.toggle('is-stuck', window.scrollY > 24);
+  /* ------------------------------------------------ Topo ao rolar */
+  var topo = document.getElementById('topo');
+  if (topo) {
+    var fixar = function () {
+      topo.classList.toggle('fixado', window.scrollY > 24);
     };
-    applyStuck();
-    window.addEventListener('scroll', applyStuck, { passive: true });
+    fixar();
+    window.addEventListener('scroll', fixar, { passive: true });
   }
 
-  /* ------------------------------------------------ Menu mobile */
-  var burger = document.getElementById('burger');
-  var nav = document.getElementById('nav');
+  /* ------------------------------------------------ Indice em telas estreitas */
+  var sanduiche = document.getElementById('sanduiche');
+  var indice = document.getElementById('indice');
 
-  if (burger && nav) {
-    var closeNav = function () {
-      nav.classList.remove('is-open');
-      burger.setAttribute('aria-expanded', 'false');
-      burger.setAttribute('aria-label', 'Abrir menu');
+  if (sanduiche && indice) {
+    var fechar = function () {
+      indice.classList.remove('aberto');
+      sanduiche.setAttribute('aria-expanded', 'false');
+      sanduiche.setAttribute('aria-label', 'Abrir índice');
     };
 
-    burger.addEventListener('click', function () {
-      var open = nav.classList.toggle('is-open');
-      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
-      burger.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
+    sanduiche.addEventListener('click', function () {
+      var aberto = indice.classList.toggle('aberto');
+      sanduiche.setAttribute('aria-expanded', aberto ? 'true' : 'false');
+      sanduiche.setAttribute('aria-label', aberto ? 'Fechar índice' : 'Abrir índice');
     });
 
-    nav.addEventListener('click', function (e) {
-      if (e.target.closest('a')) { closeNav(); }
+    indice.addEventListener('click', function (e) {
+      if (e.target.closest('a')) { fechar(); }
     });
 
     document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape' && nav.classList.contains('is-open')) {
-        closeNav();
-        burger.focus();
+      if (e.key === 'Escape' && indice.classList.contains('aberto')) {
+        fechar();
+        sanduiche.focus();
       }
     });
 
     document.addEventListener('click', function (e) {
-      if (!nav.classList.contains('is-open')) { return; }
-      if (!nav.contains(e.target) && !burger.contains(e.target)) { closeNav(); }
+      if (!indice.classList.contains('aberto')) { return; }
+      if (!indice.contains(e.target) && !sanduiche.contains(e.target)) { fechar(); }
     });
   }
 
-  /* ------------------------------------------------ Revelacao ao rolar */
-  var revealables = document.querySelectorAll('.reveal');
+  /* ------------------------------------------------ Entrada suave ao rolar */
+  var alvos = document.querySelectorAll('.entra');
 
-  if (document.documentElement.classList.contains('js-reveal')) {
-    var revealObserver = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (!entry.isIntersecting) { return; }
-        var el = entry.target;
-        var siblings = Array.prototype.slice.call(el.parentElement.children);
-        var index = siblings.indexOf(el);
-        el.style.transitionDelay = Math.min(index, 5) * 70 + 'ms';
-        el.classList.add('is-visible');
-        revealObserver.unobserve(el);
+  if (document.documentElement.classList.contains('js-entra')) {
+    var observador = new IntersectionObserver(function (entradas) {
+      entradas.forEach(function (entrada) {
+        if (!entrada.isIntersecting) { return; }
+        var el = entrada.target;
+        var irmaos = Array.prototype.slice.call(el.parentElement.children);
+        el.style.transitionDelay = Math.min(irmaos.indexOf(el), 5) * 65 + 'ms';
+        el.classList.add('dentro');
+        observador.unobserve(el);
       });
     }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
 
-    revealables.forEach(function (el) { revealObserver.observe(el); });
+    alvos.forEach(function (el) { observador.observe(el); });
 
-    /* Rede de seguranca: se o observer nao reportar nada, o conteudo aparece. */
+    /* Rede de seguranca: se o observador nao reportar, o conteudo aparece. */
     window.setTimeout(function () {
-      if (document.querySelector('.reveal.is-visible')) { return; }
-      document.documentElement.classList.remove('js-reveal');
+      if (document.querySelector('.entra.dentro')) { return; }
+      document.documentElement.classList.remove('js-entra');
     }, 1400);
   }
 
-  /* ------------------------------------------------ Link ativo na navegacao */
-  var navLinks = Array.prototype.slice.call(document.querySelectorAll('.nav__list a[href^="#"]'));
-  var sections = navLinks
+  /* ------------------------------------------------ Item atual no indice */
+  var links = Array.prototype.slice.call(document.querySelectorAll('.indice__lista a[href^="#"]'));
+  var secoes = links
     .map(function (link) { return document.querySelector(link.getAttribute('href')); })
     .filter(Boolean);
 
-  if (sections.length && 'IntersectionObserver' in window) {
-    var sectionObserver = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (!entry.isIntersecting) { return; }
-        navLinks.forEach(function (link) {
-          link.classList.toggle('is-active', link.getAttribute('href') === '#' + entry.target.id);
+  if (secoes.length && 'IntersectionObserver' in window) {
+    var vigia = new IntersectionObserver(function (entradas) {
+      entradas.forEach(function (entrada) {
+        if (!entrada.isIntersecting) { return; }
+        links.forEach(function (link) {
+          link.classList.toggle('atual', link.getAttribute('href') === '#' + entrada.target.id);
         });
       });
     }, { rootMargin: '-45% 0px -50% 0px' });
 
-    sections.forEach(function (section) { sectionObserver.observe(section); });
+    secoes.forEach(function (secao) { vigia.observe(secao); });
   }
 
-  /* ------------------------------------------------ FAQ: um item aberto por vez */
-  var faqList = document.getElementById('faqList');
-  if (faqList) {
-    var items = Array.prototype.slice.call(faqList.querySelectorAll('details'));
-    items.forEach(function (item) {
+  /* ------------------------------------------------ Perguntas: uma por vez */
+  var lista = document.getElementById('listaPerguntas');
+  if (lista) {
+    var itens = Array.prototype.slice.call(lista.querySelectorAll('details'));
+    itens.forEach(function (item) {
       item.addEventListener('toggle', function () {
         if (!item.open) { return; }
-        items.forEach(function (other) {
-          if (other !== item) { other.open = false; }
+        itens.forEach(function (outro) {
+          if (outro !== item) { outro.open = false; }
         });
       });
     });
   }
-
-  /* ------------------------------------------------ Placeholder de video */
-  document.querySelectorAll('.media__play').forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      var figure = btn.closest('figure') || btn.parentElement;
-      var label = btn.getAttribute('aria-label') || 'Video';
-      figure.setAttribute('data-video-pending', label);
-      btn.disabled = true;
-      btn.setAttribute('aria-label', label + ' (video ainda nao publicado)');
-      btn.style.opacity = '.45';
-      btn.style.cursor = 'not-allowed';
-    });
-  });
 
   /* ------------------------------------------------ Ano no rodape */
   var ano = document.getElementById('ano');

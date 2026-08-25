@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 860" width="640" height="860" role="img" aria-label="Dr Gabriel Belnuovo">
+  <defs>
+    <linearGradient id="bgrm" x1="0" y1="0" x2=".6" y2="1">
+      <stop offset="0%" stop-color="#E8DACA"/>
+      <stop offset="52%" stop-color="#DCCBB6"/>
+      <stop offset="100%" stop-color="#CDB79E"/>
+    </linearGradient>
+    <linearGradient id="skrm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#947051" stop-opacity=".62"/>
+      <stop offset="100%" stop-color="#6B4F37" stop-opacity=".3"/>
+    </linearGradient>
+    <linearGradient id="vgrm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1C1512" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#1C1512" stop-opacity=".28"/>
+    </linearGradient>
+    <pattern id="grrm" width="6" height="6" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r=".7" fill="#6B4F37" opacity=".07"/>
+      <circle cx="4.5" cy="4.5" r=".7" fill="#6B4F37" opacity=".05"/>
+    </pattern>
+  </defs>
+  <rect width="640" height="860" fill="url(#bgrm)"/>
+  <rect width="640" height="860" fill="url(#grrm)"/>
+  <g>
+    <path d="M109 860 C 122 542 211 421 320 413
+             C 429 421 518 542 531 860 Z"
+          fill="#3A302A" opacity=".92"/>
+    <path d="M320 413 L291 654 M320 413 L349 654"
+          stroke="#C7AD95" stroke-opacity=".28" stroke-width="1.1" fill="none"/>
+    <ellipse cx="320.0" cy="258" rx="95" ry="114" fill="url(#skrm)"/>
+    <path d="M225 213 Q 320 120 415 213"
+          fill="#1C1512" opacity=".88"/>
+    <g fill="none" stroke="#6B4F37" stroke-opacity=".7">
+      <circle cx="287" cy="361" r="17" stroke-width="2"/>
+      <circle cx="353" cy="361" r="17" stroke-width="2"/>
+      <path d="M287 361 H 353" stroke-width="1.4"/>
+    </g>
+  </g>
+  <rect width="640" height="860" fill="url(#vgrm)"/>
+  <rect x="14" y="14" width="612" height="832" fill="none" stroke="#947051" stroke-opacity=".3" stroke-width="1"/>
+  <text x="320.0" y="834" fill="#6B4F37" font-family="Inter, Segoe UI, sans-serif" font-size="10" font-weight="500" letter-spacing="0.28em" text-anchor="middle">DR GABRIEL BELNUOVO</text>
+</svg>

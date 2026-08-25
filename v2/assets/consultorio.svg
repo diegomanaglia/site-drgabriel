@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 620" width="1280" height="620" role="img" aria-label="Consultorio no Itaim Bibi">
+  <defs>
+    <linearGradient id="bgco" x1="0" y1="0" x2=".6" y2="1">
+      <stop offset="0%" stop-color="#E8DACA"/>
+      <stop offset="52%" stop-color="#DCCBB6"/>
+      <stop offset="100%" stop-color="#CDB79E"/>
+    </linearGradient>
+    <linearGradient id="skco" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#947051" stop-opacity=".62"/>
+      <stop offset="100%" stop-color="#6B4F37" stop-opacity=".3"/>
+    </linearGradient>
+    <linearGradient id="vgco" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1C1512" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#1C1512" stop-opacity=".28"/>
+    </linearGradient>
+    <pattern id="grco" width="6" height="6" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r=".7" fill="#6B4F37" opacity=".07"/>
+      <circle cx="4.5" cy="4.5" r=".7" fill="#6B4F37" opacity=".05"/>
+    </pattern>
+  </defs>
+  <rect width="1280" height="620" fill="url(#bgco)"/>
+  <rect width="1280" height="620" fill="url(#grco)"/>
+  <g stroke="#6B4F37" stroke-opacity=".34" fill="none" stroke-width="1.2">
+    <path d="M0 422 H 1280"/>
+    <path d="M179 422 V 124 H 563 V 422"/>
+    <path d="M717 422 V 174 H 1101 V 422"/>
+    <path d="M256 211 H 486"/>
+    <path d="M256 285 H 486"/>
+  </g>
+  <g fill="#947051" opacity=".22">
+    <rect x="768" y="310" width="282" height="112"/>
+    <rect x="64" y="347" width="77" height="74"/>
+  </g>
+  <circle cx="909" cy="99" r="31" fill="#C9A227" opacity=".3"/>
+  <rect width="1280" height="620" fill="url(#vgco)"/>
+  <rect x="14" y="14" width="1252" height="592" fill="none" stroke="#947051" stroke-opacity=".3" stroke-width="1"/>
+  <text x="640.0" y="596" fill="#6B4F37" font-family="Inter, Segoe UI, sans-serif" font-size="10" font-weight="500" letter-spacing="0.28em" text-anchor="middle">CONSULTORIO NO ITAIM BIBI</text>
+</svg>

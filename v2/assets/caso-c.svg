@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" width="720" height="480" role="img" aria-label="Antes e depois de meia cabeca">
+  <defs>
+    <linearGradient id="bgcc" x1="0" y1="0" x2=".6" y2="1">
+      <stop offset="0%" stop-color="#E8DACA"/>
+      <stop offset="52%" stop-color="#DCCBB6"/>
+      <stop offset="100%" stop-color="#CDB79E"/>
+    </linearGradient>
+    <linearGradient id="skcc" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#947051" stop-opacity=".62"/>
+      <stop offset="100%" stop-color="#6B4F37" stop-opacity=".3"/>
+    </linearGradient>
+    <linearGradient id="vgcc" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1C1512" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#1C1512" stop-opacity=".28"/>
+    </linearGradient>
+    <pattern id="grcc" width="6" height="6" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r=".7" fill="#6B4F37" opacity=".07"/>
+      <circle cx="4.5" cy="4.5" r=".7" fill="#6B4F37" opacity=".05"/>
+    </pattern>
+  </defs>
+  <clipPath id="clcc"><rect x="0" y="0" width="360.0" height="480"/></clipPath>
+  <clipPath id="crcc"><rect x="360.0" y="0" width="360.0" height="480"/></clipPath>
+  <rect width="720" height="480" fill="url(#bgcc)"/>
+  <rect width="720" height="480" fill="url(#grcc)"/>
+
+  <g clip-path="url(#clcc)">
+    <ellipse cx="180" cy="317" rx="126" ry="158" fill="#8E8378" opacity=".8"/>
+    <path d="M50 250 Q 180 125 310 250"
+          fill="#6E655C" opacity=".75"/>
+  </g>
+
+  <g clip-path="url(#crcc)">
+    <ellipse cx="540" cy="317" rx="126" ry="158" fill="url(#skcc)"/>
+    <path d="M407 254 Q 540 91 673 254"
+          fill="#1C1512" opacity=".9"/>
+    <g stroke="#1C1512" stroke-opacity=".4" stroke-width="1" fill="none">
+      <path d="M380 250 q 4 -72 11 -120"/>
+      <path d="M397 250 q 4 -72 11 -120"/>
+      <path d="M414 250 q 4 -72 11 -120"/>
+      <path d="M431 250 q 4 -72 11 -120"/>
+      <path d="M447 250 q 4 -72 11 -120"/>
+      <path d="M464 250 q 4 -72 11 -120"/>
+      <path d="M481 250 q 4 -72 11 -120"/>
+      <path d="M498 250 q 4 -72 11 -120"/>
+      <path d="M515 250 q 4 -72 11 -120"/>
+      <path d="M532 250 q 4 -72 11 -120"/>
+      <path d="M548 250 q 4 -72 11 -120"/>
+      <path d="M565 250 q 4 -72 11 -120"/>
+      <path d="M582 250 q 4 -72 11 -120"/>
+      <path d="M599 250 q 4 -72 11 -120"/>
+      <path d="M616 250 q 4 -72 11 -120"/>
+      <path d="M633 250 q 4 -72 11 -120"/>
+      <path d="M649 250 q 4 -72 11 -120"/>
+      <path d="M666 250 q 4 -72 11 -120"/>
+      <path d="M683 250 q 4 -72 11 -120"/>
+      <path d="M700 250 q 4 -72 11 -120"/>
+    </g>
+  </g>
+
+  <line x1="360.0" y1="18" x2="360.0" y2="462" stroke="#F3E9DD" stroke-opacity=".7" stroke-width="1"/>
+  <rect x="14" y="14" width="692" height="452" fill="none" stroke="#947051" stroke-opacity=".3" stroke-width="1"/>
+  <text x="180.0" y="456" fill="#4A4139" font-family="Inter, Segoe UI, sans-serif" font-size="10" font-weight="500" letter-spacing="0.28em" text-anchor="middle">ANTES</text>
+  <text x="540.0" y="456" fill="#1C1512" font-family="Inter, Segoe UI, sans-serif" font-size="10" font-weight="500" letter-spacing="0.28em" text-anchor="middle">DEPOIS</text>
+</svg>

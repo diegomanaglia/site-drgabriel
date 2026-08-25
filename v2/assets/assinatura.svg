@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 96" width="340" height="96" role="img" aria-label="Assinatura do Dr. Gabriel Belnuovo">
+  <g fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M26 62 C 22 40 34 24 50 26 C 62 27 64 40 54 46 C 44 52 34 46 38 34"/>
+    <path d="M54 46 C 62 52 66 60 62 70"/>
+    <path d="M78 40 C 74 52 76 62 84 60 C 92 58 94 46 92 38 C 96 50 100 58 108 56"/>
+    <path d="M120 30 C 116 46 118 60 126 58"/>
+    <path d="M136 44 C 132 54 136 60 144 56 C 150 53 150 44 144 42 C 138 40 134 46 136 52"/>
+    <path d="M162 26 C 158 44 160 58 168 56"/>
+    <path d="M180 44 C 176 54 180 60 188 56"/>
+    <path d="M198 42 C 194 56 198 62 206 58 C 212 55 212 46 206 44"/>
+    <path d="M222 40 C 218 54 222 60 230 56 C 236 53 236 44 230 42"/>
+    <path d="M248 38 C 244 54 248 62 256 58 C 264 54 262 42 254 40"/>
+    <path d="M274 36 C 270 54 274 62 282 58"/>
+    <path d="M292 42 C 288 54 292 60 300 56 C 306 53 306 44 300 42"/>
+    <path d="M20 78 C 90 70 220 70 316 76" stroke-width="1.4" opacity=".7"/>
+  </g>
+</svg>

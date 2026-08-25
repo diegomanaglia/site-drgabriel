@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 720" width="560" height="720" role="img" aria-label="O cirurgiao">
+  <defs>
+    <linearGradient id="bgre" x1="0" y1="0" x2=".6" y2="1">
+      <stop offset="0%" stop-color="#2A211B"/>
+      <stop offset="52%" stop-color="#1C1512"/>
+      <stop offset="100%" stop-color="#120D0B"/>
+    </linearGradient>
+    <linearGradient id="skre" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#947051" stop-opacity=".8"/>
+      <stop offset="100%" stop-color="#6B4F37" stop-opacity=".4"/>
+    </linearGradient>
+    <linearGradient id="vgre" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1C1512" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#1C1512" stop-opacity=".5"/>
+    </linearGradient>
+    <pattern id="grre" width="6" height="6" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r=".7" fill="#6B4F37" opacity=".07"/>
+      <circle cx="4.5" cy="4.5" r=".7" fill="#6B4F37" opacity=".05"/>
+    </pattern>
+  </defs>
+  <rect width="560" height="720" fill="url(#bgre)"/>
+  <rect width="560" height="720" fill="url(#grre)"/>
+  <g>
+    <path d="M95 720 C 106 454 185 353 280 346
+             C 375 353 454 454 465 720 Z"
+          fill="#1A1411" opacity="1"/>
+    <path d="M280 346 L255 547 M280 346 L305 547"
+          stroke="#C7AD95" stroke-opacity=".28" stroke-width="1.1" fill="none"/>
+    <ellipse cx="280.0" cy="216" rx="83" ry="99" fill="url(#skre)"/>
+    <path d="M197 176 Q 280 95 363 176"
+          fill="#1C1512" opacity=".88"/>
+    <g fill="none" stroke="#C7AD95" stroke-opacity=".7">
+      <circle cx="251" cy="302" r="15" stroke-width="2"/>
+      <circle cx="309" cy="302" r="15" stroke-width="2"/>
+      <path d="M251 302 H 309" stroke-width="1.4"/>
+    </g>
+  </g>
+  <rect width="560" height="720" fill="url(#vgre)"/>
+  <rect x="14" y="14" width="532" height="692" fill="none" stroke="#C7AD95" stroke-opacity=".3" stroke-width="1"/>
+  <text x="280.0" y="694" fill="#C7AD95" font-family="Inter, Segoe UI, sans-serif" font-size="10" font-weight="500" letter-spacing="0.28em" text-anchor="middle">O CIRURGIAO</text>
+</svg>
